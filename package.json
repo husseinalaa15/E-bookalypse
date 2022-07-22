@@ -2,6 +2,9 @@
   "name": "e-bookalypse",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.15.0"
+  },
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
@@ -13,6 +16,7 @@
     "bcrypt": "^5.0.1",
     "bootstrap": "^5.2.0-beta1",
     "bootstrap-icons": "^1.8.3",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-validator": "^6.14.2",
     "formik": "^2.2.9",
@@ -36,12 +40,10 @@
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "startOurServer": "nodemon server.js"
+    "start": "node index.js",
+    "startOurServer": "nodemon index.js"
   },
   "eslintConfig": {
     "extends": [
